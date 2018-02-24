@@ -1,0 +1,21 @@
+timbits = int(input())
+totalCost = 0
+
+if (timbits/40) >= 1:
+  Bigboxes = int(timbits/40)
+  totalCost = totalCost + (6.69 * Bigboxes)
+  timbits = timbits - (Bigboxes * 40)
+
+if timbits >= 20:
+  Mediumboxes = int(timbits/20)
+  totalCost = totalCost + (3.39 * Mediumboxes)
+  timbits = timbits - (Mediumboxes * 20)
+
+if timbits >= 10:
+  Smallboxes = int(timbits/10)
+  totalCost = totalCost + (1.99 * Smallboxes)
+  timbits = timbits - (Smallboxes * 10)
+  
+totalCost = totalCost + (0.2 *timbits)
+
+print (totalCost)

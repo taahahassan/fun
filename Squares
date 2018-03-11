@@ -1,0 +1,6 @@
+N = int(input())
+
+for i in range(0,N):
+  m = i**2
+  if m < N and m != 0:
+    print (m)

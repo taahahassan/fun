@@ -1,0 +1,7 @@
+n = input()
+
+for i in range(0, len(n)):
+  if n[i] == "+":
+    str1 = int(n[0:i])
+    str2 = int(n[i:len(n)])
+    print(str1 + str2)
